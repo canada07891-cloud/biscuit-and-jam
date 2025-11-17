@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Французские пирожные макарон премиум-класса от Алёны. Изысканные вкусы, натуральные ингредиенты, индивидуальный подход.">
+    <meta name="keywords" content="макарон, macarons, французские пирожные, заказать макарон, десерты москва">
+    <title>Biscuit & Jam - Французские макарон премиум-класса</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="macaron-loader">
+                <div class="macaron-top"></div>
+                <div class="macaron-middle"></div>
+                <div class="macaron-bottom"></div>
+            </div>
+            <h2 class="preloader-text">Biscuit & Jam</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">🍰</span>
+                <span class="logo-text">Biscuit & Jam</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Главная</a></li>
+                <li><a href="#flavors" class="nav-link">Вкусы</a></li>
+                <li><a href="#about" class="nav-link">О нас</a></li>
+                <li><a href="#process" class="nav-link">Процесс</a></li>
+                <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+                <li><a href="#constructor" class="nav-link">Конструктор</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Particles -->
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge" data-aos="fade-down">Премиум качество с 2020</div>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+                Французские макарон<br>
+                <span class="gradient-text">ручной работы</span>
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">
+                Изысканные пирожные с неповторимым вкусом от Алёны.<br>
+                Создаем моменты счастья с каждым макароном.
+            </p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+                <a href="#constructor" class="btn btn-primary btn-glow">
+                    <span>Создать заказ</span>
+                    <i class="arrow">→</i>
+                </a>
+                <a href="#flavors" class="btn btn-outline">
+                    <span>Посмотреть вкусы</span>
+                </a>
+            </div>
+
+            <!-- Floating Elements -->
+            <div class="floating-elements">
+                <div class="float-item" style="top: 20%; left: 10%;">🍓</div>
+                <div class="float-item" style="top: 60%; left: 15%;">🥥</div>
+                <div class="float-item" style="top: 30%; right: 10%;">🥭</div>
+                <div class="float-item" style="top: 70%; right: 15%;">🍋</div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="800">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Листайте вниз</p>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon">😊</div>
+                    <h3 class="stat-number" data-count="500">0</h3>
+                    <p class="stat-label">Счастливых клиентов</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon">🎂</div>
+                    <h3 class="stat-number" data-count="1200">0</h3>
+                    <p class="stat-label">Заказов выполнено</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon">⭐</div>
+                    <h3 class="stat-number" data-count="12">0</h3>
+                    <p class="stat-label">Уникальных вкусов</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-icon">❤️</div>
+                    <h3 class="stat-number" data-count="4">0</h3>
+                    <p class="stat-label">Года опыта</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flavors Section with Advanced Grid -->
+    <section id="flavors" class="section flavors-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Ассортимент</span>
+                <h2 class="section-title">Наши изысканные вкусы</h2>
+                <p class="section-subtitle">Каждый макарон - произведение искусства с уникальным вкусом</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="classic">Классика</button>
+                <button class="filter-btn" data-filter="premium">Премиум</button>
+                <button class="filter-btn" data-filter="seasonal">Сезонные</button>
+            </div>
+
+            <div class="flavors-grid">
+                <!-- Pistachio-Raspberry -->
+                <div class="flavor-card premium" data-flavor="pistachio-raspberry" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="flavor-badge">Premium</div>
+                    <div class="flavor-image">
+                        <img src="assets/img/portfolio/p6.png" alt="Фисташка-Малина">
+                        <div class="flavor-overlay">
+                            <button class="btn-view">
+                                <span>Подробнее</span>
+                                <i>→</i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flavor-info">
+                        <h3>Фисташка-Малина</h3>
+                        <p>Нежное сочетание фисташки с яркой малиной</p>
+                        <div class="flavor-tags">
+                            <span class="tag">Ореховый</span>
+                            <span class="tag">Ягодный</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pear-Caramel -->
+                <div class="flavor-card premium" data-flavor="pear-caramel" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="flavor-badge">Premium</div>
+                    <div class="flavor-image">
+                        <img src="assets/img/portfolio/p2.png" alt="Груша-Карамель">
+                        <div class="flavor-overlay">
+                            <button class="btn-view">
+                                <span>Подробнее</span>
+                                <i>→</i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flavor-info">
+                        <h3>Груша-Карамель</h3>
+                        <p>Сладкая карамель с ароматной грушей</p>
+                        <div class="flavor-tags">
+                            <span class="tag">Фруктовый</span>
+                            <span class="tag">Сладкий</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blackberry -->
+                <div class="flavor-card classic" data-flavor="blackberry" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="flavor-image">
+                        <img src="assets/img/portfolio/p3.png" alt="Ежевика">
+                        <div class="flavor-overlay">
+                            <button class="btn-view">
+                                <span>Подробнее</span>
+                                <i>→</i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flavor-info">
+                        <h3>Ежевика</h3>
+                        <p>Насыщенный ягодный вкус с легкой кислинкой</p>
+                        <div class="flavor-tags">
+                            <span class="tag">Ягодный</span>
+                            <span class="tag">Свежий</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strawberry -->
+                <div class="flavor-card classic" data-flavor="strawberry" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="flavor-image">
+                        <img src="assets/img/portfolio/p4.png" alt="Клубника">
+                        <div class="flavor-overlay">
+                            <button class="btn-view">
+                                <span>Подробнее</span>
+                                <i>→</i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flavor-info">
+                        <h3>Клубника</h3>
+                        <p>Классический вкус сочной клубники</p>
+                        <div class="flavor-tags">
+                            <span class="tag">Классика</span>
+                            <span class="tag">Любимый</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mango -->
+                <div class="flavor-card premium" data-flavor="mango" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="flavor-badge">Premium</div>
+                    <div class="flavor-image">
+                        <img src="assets/img/portfolio/p5.png" alt="Манго">
+                        <div class="flavor-overlay">
+                            <button class="btn-view">
+                                <span>Подробнее</span>
+                                <i>→</i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flavor-info">
+                        <h3>Манго</h3>
+                        <p>Тропическая сладость солнечного манго</p>
+                        <div class="flavor-tags">
+                            <span class="tag">Экзотика</span>
+                            <span class="tag">Тропики</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Year -->
+                <div class="flavor-card seasonal" data-flavor="newyear" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="flavor-badge seasonal">Сезонный</div>
+                    <div class="flavor-image">
+                        <img src="assets/img/portfolio/ng.png" alt="Новогодние">
+                        <div class="flavor-overlay">
+                            <button class="btn-view">
+                                <span>Подробнее</span>
+                                <i>→</i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flavor-info">
+                        <h3>Новогодние</h3>
+                        <p>Праздничные вкусы для особого настроения</p>
+                        <div class="flavor-tags">
+                            <span class="tag">Праздник</span>
+                            <span class="tag">Пряный</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section with Parallax -->
+    <section id="about" class="section about-section parallax-section">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-frame">
+                        <img src="assets/img/profile.png" alt="Алёна - кондитер">
+                        <div class="image-decoration"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <h3>4+</h3>
+                        <p>года опыта</p>
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <span class="section-label">О мастере</span>
+                    <h2 class="section-title">Привет! Я Алёна</h2>
+                    <div class="about-divider"></div>
+                    <p class="lead">Домашний кондитер с большой любовью к французским десертам и вниманием к каждой детали.</p>
+                    <p>Каждый макарон создается вручную с особым вниманием к деталям и качеству ингредиентов. Я использую только натуральные продукты: миндальную муку высшего качества, свежие ягоды и фрукты, настоящий бельгийский шоколад.</p>
+                    <p>Мои макарон — это не просто десерт, это маленькое произведение искусства, созданное специально для вас. Я постоянно экспериментирую с новыми вкусами и создаю уникальные сочетания.</p>
+
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h4>100% натурально</h4>
+                                <p>Только качественные ингредиенты</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 8V12L15 15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Ручная работа</h4>
+                                <p>Каждый макарон уникален</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h4>С любовью</h4>
+                                <p>Индивидуальный подход к каждому</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="section process-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Как это работает</span>
+                <h2 class="section-title">Процесс создания</h2>
+                <p class="section-subtitle">От идеи до готового десерта - каждый этап важен</p>
+            </div>
+
+            <div class="process-timeline">
+                <div class="process-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="process-number">01</div>
+                    <div class="process-content">
+                        <h3>Заказ</h3>
+                        <p>Выберите вкусы и количество через конструктор или напишите мне в WhatsApp</p>
+                    </div>
+                    <div class="process-icon">📱</div>
+                </div>
+
+                <div class="process-item" data-aos="fade-left" data-aos-delay="200">
+                    <div class="process-number">02</div>
+                    <div class="process-content">
+                        <h3>Подготовка</h3>
+                        <p>Подбираю свежайшие ингредиенты и готовлю все компоненты</p>
+                    </div>
+                    <div class="process-icon">🥄</div>
+                </div>
+
+                <div class="process-item" data-aos="fade-right" data-aos-delay="300">
+                    <div class="process-number">03</div>
+                    <div class="process-content">
+                        <h3>Создание</h3>
+                        <p>Выпекаю хрустящие ракушки и готовлю нежные начинки</p>
+                    </div>
+                    <div class="process-icon">👩‍🍳</div>
+                </div>
+
+                <div class="process-item" data-aos="fade-left" data-aos-delay="400">
+                    <div class="process-number">04</div>
+                    <div class="process-content">
+                        <h3>Упаковка</h3>
+                        <p>Красиво упаковываю в фирменные коробки</p>
+                    </div>
+                    <div class="process-icon">🎁</div>
+                </div>
+
+                <div class="process-item" data-aos="fade-right" data-aos-delay="500">
+                    <div class="process-number">05</div>
+                    <div class="process-content">
+                        <h3>Доставка</h3>
+                        <p>Передаю заказ лично в руки или договариваемся о встрече</p>
+                    </div>
+                    <div class="process-icon">🚗</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section reviews-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Отзывы</span>
+                <h2 class="section-title">Что говорят клиенты</h2>
+                <p class="section-subtitle">Ваше счастье - наша лучшая награда</p>
+            </div>
+
+            <div class="reviews-carousel" data-aos="fade-up" data-aos-delay="200">
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Заказывала макарон на день рождения подруги. Все были в восторге! Очень нежные, тают во рту. Особенно понравился вкус фисташка-малина!"</p>
+                    <div class="review-author">
+                        <div class="author-avatar">М</div>
+                        <div class="author-info">
+                            <h4>Мария</h4>
+                            <p>Москва</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Алёна - настоящий мастер! Макарон не только красивые, но и невероятно вкусные. Заказываю уже третий раз, всегда свежие и качественные."</p>
+                    <div class="review-author">
+                        <div class="author-avatar">А</div>
+                        <div class="author-info">
+                            <h4>Анна</h4>
+                            <p>Москва</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Лучшие макарон в Москве! Попробовал много, но эти - особенные. Очень рекомендую манго и грушу-карамель. Идеальный подарок!"</p>
+                    <div class="review-author">
+                        <div class="author-avatar">Д</div>
+                        <div class="author-info">
+                            <h4>Дмитрий</h4>
+                            <p>Москва</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Constructor -->
+    <section id="constructor" class="section constructor-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Конструктор заказа</span>
+                <h2 class="section-title">Создайте свой набор</h2>
+                <p class="section-subtitle">Выберите вкусы и количество - мы все приготовим</p>
+            </div>
+
+            <div class="constructor-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="constructor-left">
+                    <div class="flavor-selector">
+                        <h3>Выберите вкусы:</h3>
+                        <div class="flavor-options">
+                            <label class="flavor-option">
+                                <input type="checkbox" name="flavor" value="Фисташка-Малина">
+                                <span class="flavor-checkbox">
+                                    <span class="checkmark">✓</span>
+                                    <span class="flavor-name">Фисташка-Малина</span>
+                                    <span class="flavor-count">0</span>
+                                </span>
+                                <div class="quantity-controls">
+                                    <button class="qty-btn minus">-</button>
+                                    <input type="number" value="0" min="0" max="24" class="qty-input">
+                                    <button class="qty-btn plus">+</button>
+                                </div>
+                            </label>
+
+                            <label class="flavor-option">
+                                <input type="checkbox" name="flavor" value="Груша-Карамель">
+                                <span class="flavor-checkbox">
+                                    <span class="checkmark">✓</span>
+                                    <span class="flavor-name">Груша-Карамель</span>
+                                    <span class="flavor-count">0</span>
+                                </span>
+                                <div class="quantity-controls">
+                                    <button class="qty-btn minus">-</button>
+                                    <input type="number" value="0" min="0" max="24" class="qty-input">
+                                    <button class="qty-btn plus">+</button>
+                                </div>
+                            </label>
+
+                            <label class="flavor-option">
+                                <input type="checkbox" name="flavor" value="Ежевика">
+                                <span class="flavor-checkbox">
+                                    <span class="checkmark">✓</span>
+                                    <span class="flavor-name">Ежевика</span>
+                                    <span class="flavor-count">0</span>
+                                </span>
+                                <div class="quantity-controls">
+                                    <button class="qty-btn minus">-</button>
+                                    <input type="number" value="0" min="0" max="24" class="qty-input">
+                                    <button class="qty-btn plus">+</button>
+                                </div>
+                            </label>
+
+                            <label class="flavor-option">
+                                <input type="checkbox" name="flavor" value="Клубника">
+                                <span class="flavor-checkbox">
+                                    <span class="checkmark">✓</span>
+                                    <span class="flavor-name">Клубника</span>
+                                    <span class="flavor-count">0</span>
+                                </span>
+                                <div class="quantity-controls">
+                                    <button class="qty-btn minus">-</button>
+                                    <input type="number" value="0" min="0" max="24" class="qty-input">
+                                    <button class="qty-btn plus">+</button>
+                                </div>
+                            </label>
+
+                            <label class="flavor-option">
+                                <input type="checkbox" name="flavor" value="Манго">
+                                <span class="flavor-checkbox">
+                                    <span class="checkmark">✓</span>
+                                    <span class="flavor-name">Манго</span>
+                                    <span class="flavor-count">0</span>
+                                </span>
+                                <div class="quantity-controls">
+                                    <button class="qty-btn minus">-</button>
+                                    <input type="number" value="0" min="0" max="24" class="qty-input">
+                                    <button class="qty-btn plus">+</button>
+                                </div>
+                            </label>
+
+                            <label class="flavor-option">
+                                <input type="checkbox" name="flavor" value="Новогодний">
+                                <span class="flavor-checkbox">
+                                    <span class="checkmark">✓</span>
+                                    <span class="flavor-name">Новогодний</span>
+                                    <span class="flavor-count">0</span>
+                                </span>
+                                <div class="quantity-controls">
+                                    <button class="qty-btn minus">-</button>
+                                    <input type="number" value="0" min="0" max="24" class="qty-input">
+                                    <button class="qty-btn plus">+</button>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="constructor-right">
+                    <div class="order-summary">
+                        <h3>Ваш заказ</h3>
+                        <div class="summary-items" id="summaryItems">
+                            <p class="empty-message">Выберите вкусы слева</p>
+                        </div>
+                        <div class="summary-total">
+                            <div class="total-row">
+                                <span>Всего макарон:</span>
+                                <strong id="totalCount">0</strong>
+                            </div>
+                            <div class="total-row">
+                                <span>Примерная стоимость:</span>
+                                <strong id="totalPrice">0 ₽</strong>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block" id="sendOrder">
+                            <span>Отправить заказ</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                            </svg>
+                        </button>
+                        <p class="order-note">* Минимальный заказ от 3 макарон<br>* Цена уточняется при оформлении</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Контакты</span>
+                <h2 class="section-title">Свяжитесь со мной</h2>
+                <p class="section-subtitle">Готова ответить на все ваши вопросы</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon whatsapp">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                                <path d="M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c1.746.943 3.71 1.444 5.71 1.447h.006c6.585 0 11.946-5.336 11.949-11.896 0-3.176-1.24-6.165-3.48-8.45zm-8.475 18.297c-1.77-.001-3.507-.476-5.02-1.378l-.36-.214-3.741.981 1-3.648-.235-.374c-.99-1.574-1.512-3.393-1.511-5.26.004-5.45 4.437-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.993c-.003 5.45-4.437 9.887-9.885 9.887z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <a href="https://wa.me/79067402165?text=Здравствуйте!+Хотел(а)+бы+сделать+заказ!" class="contact-link">+7 (906) 740-21-65</a>
+                            <p>Ответим в течение часа</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Адрес</h3>
+                            <p>Москва, Боровское Шоссе<br>ЖК Мещерский Лес</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Условия</h3>
+                            <p>Минимальный заказ от 3 шт<br>Срок: 1-2 дня</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-cta" data-aos="fade-left">
+                    <div class="cta-card">
+                        <div class="cta-icon">💬</div>
+                        <h3>Готовы сделать заказ?</h3>
+                        <p>Напишите мне в WhatsApp, и я помогу вам создать идеальный набор макарон для любого повода!</p>
+                        <a href="https://wa.me/79067402165?text=Здравствуйте!+Хотел(а)+бы+сделать+заказ!" class="btn btn-whatsapp btn-lg">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                            </svg>
+                            <span>Написать в WhatsApp</span>
+                        </a>
+                        <div class="cta-features">
+                            <div class="cta-feature">
+                                <span class="icon">✓</span>
+                                <span>Быстрый ответ</span>
+                            </div>
+                            <div class="cta-feature">
+                                <span class="icon">✓</span>
+                                <span>Бесплатная консультация</span>
+                            </div>
+                            <div class="cta-feature">
+                                <span class="icon">✓</span>
+                                <span>Индивидуальный подход</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>🍰 Biscuit & Jam</h3>
+                    <p>Французские макарон ручной работы</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/79067402165" class="social-link" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <a href="#home">Главная</a>
+                    <a href="#flavors">Вкусы</a>
+                    <a href="#about">О нас</a>
+                    <a href="#reviews">Отзывы</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Контакты</h4>
+                    <a href="https://wa.me/79067402165">WhatsApp</a>
+                    <a href="#contact">Связаться</a>
+                    <a href="#constructor">Заказать</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Biscuit & Jam. Все права защищены.</p>
+                <p>Сделано с ❤️ для Алёны</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Flavor Details -->
+    <div class="modal" id="flavorModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body">
+                <div class="modal-gallery">
+                    <img id="modalMainImage" src="" alt="">
+                    <div class="modal-thumbnails" id="modalThumbnails"></div>
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <div id="modalTags" class="flavor-tags"></div>
+                    <p id="modalDescription"></p>
+                    <div class="modal-features">
+                        <div class="modal-feature">
+                            <span class="icon">🌱</span>
+                            <span>Натуральные ингредиенты</span>
+                        </div>
+                        <div class="modal-feature">
+                            <span class="icon">👩‍🍳</span>
+                            <span>Ручная работа</span>
+                        </div>
+                        <div class="modal-feature">
+                            <span class="icon">⏰</span>
+                            <span>Свежесть гарантирована</span>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/79067402165?text=Здравствуйте!+Хотел(а)+бы+заказать+" class="btn btn-primary btn-block" id="modalOrderBtn">
+                        <span>Заказать этот вкус</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
