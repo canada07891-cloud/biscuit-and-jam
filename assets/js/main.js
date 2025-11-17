@@ -37,7 +37,7 @@ const flavorsData = {
     },
     'newyear': {
         title: 'Новогодние',
-        description: 'Праздничные вкусы для особого настроения! Специальная коллекция с зимними вкусами: имбирный пряник, глинтвейн, шоколад с мятой.',
+        description: 'Новогодние макаруны в форме рождественского венка для праздничного настроения, начинка: любой вкус из ассортимента',
         tags: ['Праздник', 'Пряный'],
         images: ['assets/img/ng1.jpeg', 'assets/img/ng2.jpeg', 'assets/img/ng3.jpeg']
     }
@@ -119,25 +119,35 @@ function initParticles() {
     if (typeof particlesJS !== 'undefined') {
         particlesJS('particles-js', {
             particles: {
-                number: { value: 80, density: { enable: true, value_area: 800 } },
-                color: { value: '#ffffff' },
-                shape: { type: 'circle' },
-                opacity: { value: 0.5, random: true },
-                size: { value: 3, random: true },
-                line_linked: {
-                    enable: true,
-                    distance: 150,
-                    color: '#ffffff',
-                    opacity: 0.4,
-                    width: 1
+                number: { value: 30, density: { enable: true, value_area: 800 } },
+                color: { value: ['#fdecda', '#ffd6d6', '#ffe4e1', '#fff5e1', '#e8f5e9'] },
+                shape: {
+                    type: ['circle', 'edge'],
+                    stroke: { width: 2, color: '#0abab1' }
                 },
-                move: { enable: true, speed: 2, direction: 'none', random: true, out_mode: 'out' }
+                opacity: { value: 0.3, random: true, anim: { enable: true, speed: 1, opacity_min: 0.1 } },
+                size: { value: 8, random: true, anim: { enable: true, speed: 3, size_min: 4 } },
+                line_linked: {
+                    enable: false
+                },
+                move: {
+                    enable: true,
+                    speed: 1.5,
+                    direction: 'top',
+                    random: true,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false
+                }
             },
             interactivity: {
                 detect_on: 'canvas',
                 events: {
-                    onhover: { enable: true, mode: 'repulse' },
-                    onclick: { enable: true, mode: 'push' }
+                    onhover: { enable: true, mode: 'bubble' },
+                    onclick: { enable: false }
+                },
+                modes: {
+                    bubble: { distance: 200, size: 12, duration: 2, opacity: 0.5 }
                 }
             }
         });
